@@ -9,14 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.codingnomads</groupId>
-	<artifactId>spring-deployment-demo</artifactId>
+	<artifactId>heroku-deployment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-deployment-demo</name>
+	<name>heroku-deployment</name>
 	<description>Demo project for Spring Boot deployment</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -25,7 +25,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,7 +51,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>ROOT</finalName>
+		<finalName>heroku-demo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
